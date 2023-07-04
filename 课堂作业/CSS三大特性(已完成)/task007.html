@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="keywords" content="关键词1,关键词2,关键词3" />
+		<meta name="description" content="对网站的描述" />
+		<title>第1题</title>
+		<style type="text/css">
+			#father #son {
+				color: blue;
+			}
+			#father p.c2 {
+				color: black;
+			}
+			div.c1 p.c2 {
+				color: red;
+			}
+			#father {
+				color: green !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="father" class="c1">
+			<p id="son" class="c2">试问这行字体是什么颜色的？</p>
+		</div>
+	</body>
+</html>
+
+<!-- 分析:
+     (1)以上四个选择器单独每一个均能找到并改变<p>元素的文本为其相应的颜色
+     (2)要通过分析权重来看<p>元素的文本内容显示什么颜色
+	 (3)通过观察分析:
+		            第1个 两个id,所以权重为(2.0.0)
+					第2个 一个id/一个类/一个标签,所以权重为(1.1.1)
+					第3个 两个类/两个标签,所以权重为(0.2.2)
+					第4个 <p>只是继承<div>的属性,所以权重为(0.0.0)
+	(4)综上所述,以上四个选择器第1个权重最高,所以文本颜色为blue蓝色					 -->

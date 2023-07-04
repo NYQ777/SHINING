@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<title>第6题</title>
+		<style type="text/css">
+			.c1 .c2 div {
+				color: blue;
+			}
+			div #box3 {
+				color: green;
+			}
+			#box1 div {
+				color: yellow;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="box1" class="c1">
+			<div id="box2" class="c2">
+				<div id="box3" class="c3">文字</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<!-- 分析
+第1个:2个类/1个标签,权重为(0.2.1)
+第2个:1个id/1个标签,权重为(1.0.1)
+第3个:1个id/1个标签,权重为(1.0.1)
+2,3权重相同,根据层叠性规则,当权重一样时,排在后面的3会覆盖2的样式,所以最终颜色呈现为yellow黄色 -->

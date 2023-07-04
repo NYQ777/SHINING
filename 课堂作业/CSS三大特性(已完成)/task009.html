@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="keywords" content="关键词1,关键词2,关键词3" />
+		<meta name="description" content="对网站的描述" />
+		<title>第3题</title>
+		<style type="text/css">
+			div p {
+				color: red;
+			}
+			#father {
+				color: red;
+			}
+			p.c2 {
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="father" class="c1">
+			<p class="c2">试问这行字体是什么颜色的？</p>
+		</div>
+	</body>
+</html>
+
+<!-- 第1个:2个标签,权重为(0.0.2)
+第2个:<p>元素的属性继承自父元素<div>,权重为0
+第3个:1个类/一个标签,权重为(0.1.1)
+所以,文本颜色为blue蓝色 -->
