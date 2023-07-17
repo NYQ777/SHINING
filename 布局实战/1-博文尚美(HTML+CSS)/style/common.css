@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #646464;
+}
+
+img {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-style: normal;
+}
+
+.f13 {
+  font-size: 13px;
+  text-align: center;
+}
+
+.mr62 {
+  margin-right: 62px;
+}
+
+.container {
+  width: 1082px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+.center {
+  margin: 0 auto;
+}
