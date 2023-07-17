@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        position: relative;
+        width: 520px;
+        height: 280px;
+        margin: 35px auto;
+      }
+      ul > li {
+        float: left;
+        font-size:18px;
+        width: 9px;
+        height: 9px;
+        color: #b7b7b7;
+      }
+      ul > li:first-child {
+        color: red;
+      }
+      div > img:first-child {
+        width: 520px;
+        height: 280px;
+      }
+      div > img:nth-child(2) {
+        position: absolute;
+        left: 0;
+        bottom: 50%;
+        margin-bottom: -18px;
+        border-radius: 0 36px 36px 0;
+      }
+      div > img:nth-child(3) {
+        position: absolute;
+        right: 0;
+        bottom: 50%;
+        margin-bottom: -18px;
+        border-radius: 36px 0 0 36px;
+      }
+      div > ul {
+        position: absolute;
+        left: 50%;
+        bottom: 3px;
+        margin-left: -42.5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="./database/mix轮播图/img/mix.jpg" alt="" />
+      <img src="./database/mix轮播图/img/left.png" alt="" />
+      <img src="./database/mix轮播图/img/right.png" alt="" />
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </body>
+</html>

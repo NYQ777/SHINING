@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      @keyframes light {
+        from {
+          opacity: 0;
+
+          to {
+            opacity: 1;
+          }
+        }
+      }
+
+      div {
+        width: 350px;
+        height: 280px;
+        margin: 30px auto 0;
+        position: relative;
+      }
+
+      img:nth-child(1) {
+        position: absolute;
+        bottom: -50px;
+        left: 72px;
+      }
+
+      img:nth-child(2) {
+        position: absolute;
+        top: 0;
+        animation: light 0.2s linear 0s infinite alternate;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <img src="./img/dengpao.png" alt="" />
+      <img src="./img/guang.png" alt="" />
+    </div>
+  </body>
+</html>
