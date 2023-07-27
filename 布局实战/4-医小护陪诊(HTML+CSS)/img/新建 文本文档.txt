@@ -1,0 +1,34 @@
+.bg-sp_phone {
+    width: 97px; height: 114px;
+    background: url('css_sprites.png') -500px -7px;
+}
+
+.bg-sp_pig {
+    width: 104px; height: 113px;
+    background: url('css_sprites.png') -611px -7px;
+}
+
+.bg-sp_men {
+    width: 88px; height: 115px;
+    background: url('css_sprites.png') -296px -7px;
+}
+
+.bg-sp_list {
+    width: 79px; height: 96px;
+    background: url('css_sprites.png') -7px -7px;
+}
+
+.bg-sp_shield {
+    width: 84px; height: 92px;
+    background: url('css_sprites.png') -100px -7px;
+}
+
+.bg-sp_money {
+    width: 88px; height: 94px;
+    background: url('css_sprites.png') -398px -7px;
+}
+
+.bg-sp_pay {
+    width: 84px; height: 98px;
+    background: url('css_sprites.png') -198px -7px;
+}

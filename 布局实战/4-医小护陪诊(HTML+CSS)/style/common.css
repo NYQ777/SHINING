@@ -1,0 +1,19 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.center {
+    margin: 0 auto;
+}
+.active {
+    color: #53cac3 !important;
+}
