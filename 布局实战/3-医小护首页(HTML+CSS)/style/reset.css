@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    display:block;
+}
+
+img {
+    display:block;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+dl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display:block;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+p {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+
+
+.clearfix:before,
+.clearfix:after{
+    content:"";
+    display:table;
+    visibility:hidden;
+    clear:both;
+}
