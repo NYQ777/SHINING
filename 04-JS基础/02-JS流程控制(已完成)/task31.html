@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>买东西</title>
+  </head>
+  <body>
+    <script>
+      var count = 0,amount = 100;
+      // 遍历毛巾的数量，每条毛巾价格为 5 元
+      for (var towels = 0; towels <= amount / 5; towels++) {
+        // 遍历牙刷的数量，每只牙刷价格为 2 元
+        for (var toothbrushes = 0; toothbrushes <= amount / 2; toothbrushes++) {
+          // 遍历牙膏的数量，每支牙膏价格为 10 元
+          for (var toothpaste = 0; toothpaste <= amount / 10; toothpaste++) {
+            // 计算购买组合的金额
+            totalAmount = towels * 5 + toothbrushes * 2 + toothpaste * 10;
+            // 检查购买组合的金额是否等于目标金额 amount
+            // 如果是，增加购买方案数量 count，并打印出购买组合
+            if (totalAmount === amount) {
+              count++;
+              console.log(
+                "购买方案" +count+": 毛巾" +towels +"条, 牙刷" +toothbrushes+"只, 牙膏" +toothpaste+"支"
+              );
+            }
+          }
+        }
+      }
+      console.log("购买方案数量:"+count);
+    </script>
+  </body>
+</html>

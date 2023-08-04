@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>判断闰年</title>
+  </head>
+  <body>
+    <script>
+      var birthYear = Number(prompt("请输入你的出生年份"));
+      if (
+        (birthYear % 4 === 0 && birthYear % 100 !== 0) ||
+        (birthYear % 400 === 0 && birthYear % 100 === 0)
+      ) {
+        alert(birthYear + "是闰年");
+      } else {
+        alert(birthYear + "不是闰年");
+      }
+    </script>
+  </body>
+</html>

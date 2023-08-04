@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>鸡兔同笼</title>
+  </head>
+  <body>
+    <script>
+      var chickenNumber = 0;
+      bunnyNumber = 0;
+      for (var i = 0; i <= 35; i++) {
+        chickenNumber = i;
+        bunnyNumber = 35 - chickenNumber;
+        if (chickenNumber * 2 + bunnyNumber * 4 === 94) break;
+      }
+      console.log("鸡有" + chickenNumber + "只,兔子有" + bunnyNumber + "只");
+    </script>
+  </body>
+</html>

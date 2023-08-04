@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>判断星期</title>
+  </head>
+  <body>
+    <script>
+      var day = prompt("请输入日期(1-30)");
+      var firstDayOfMonth = 4; // 假设本月 1 号是星期四，这里星期四对应的数字是 4
+      var weekdayNumber = (firstDayOfMonth + Number(day) - 1) % 7;
+      var weekdays = [
+        "星期日",
+        "星期一",
+        "星期二",
+        "星期三",
+        "星期四",
+        "星期五",
+        "星期六",
+      ];
+      var weekdayName = weekdays[weekdayNumber];
+      alert(weekdayName);
+    </script>
+  </body>
+</html>

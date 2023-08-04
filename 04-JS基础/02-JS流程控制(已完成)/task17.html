@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>求正方形的面积</title>
+  </head>
+  <body>
+    <script>
+      var lengthOfSide = Number(prompt("请输入正方形的边长"));
+      if (isNaN(lengthOfSide)) {
+        alert("输入的不是一个数字,请重新输入");
+      } else {
+        alert("这个正方形的面积是:" + Math.pow(lengthOfSide, 2));
+      }
+    </script>
+  </body>
+</html>

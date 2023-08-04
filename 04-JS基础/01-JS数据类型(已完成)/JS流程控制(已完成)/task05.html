@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>比较最大值</title>
+  </head>
+  <body>
+    <script>
+      var num1 = Number(prompt("请输入第一个数字"));
+      var num2 = Number(prompt("请输入第二个数字"));
+      var num3 = Number(prompt("请输入第三个数字"));
+      var num4 = Number(prompt("请输入第四个数字"));
+      // 定义一个接受最大值的变量
+      var maxNum = num1;
+
+      // 判断大小
+      if (num2 > maxNum) {
+        maxNum = num2;
+      }
+      if (num3 > maxNum) {
+        maxNum = num3;
+      }
+      if (num4 > maxNum) {
+        maxNum = num4;
+      }
+      // 输出最大值
+      alert(maxNum);
+    </script>
+  </body>
+</html>

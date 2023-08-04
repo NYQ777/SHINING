@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>判断体重是否标准</title>
+  </head>
+  <body>
+    <script>
+      var gender = prompt("请输入你的性别(男或女)");
+      var height = prompt("请输入你的身高(cm)");
+      var weight = prompt("请输入你的体重(kg)");
+      var normalWeight = 0;
+
+      if ((gender = "男")) {
+        var normalWeight = (Number(height) - 80) * 0.7;
+      } else {
+        var normalWeight = (Number(height) - 70) * 0.6;
+      }
+
+      if (Number(weight) > normalWeight * 1.05) {
+        alert("该减肥了!");
+      } else if (Number(weight) < normalWeight * 0.95) {
+        alert("太瘦了");
+      } else {
+        alert("标准体重");
+      }
+    </script>
+  </body>
+</html>

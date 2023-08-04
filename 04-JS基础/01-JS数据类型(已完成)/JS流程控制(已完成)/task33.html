@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>猜数字小游戏</title>
+  </head>
+  <body>
+    <script>
+      // 生成一个0-40之间的随机数
+      var randomNum = parseInt(Math.random() * 41);
+      alert(randomNum);
+      //定义一个变量用来存储猜数字的次数
+      var count = 5;
+
+      while (true) {
+        // 提示用户输入一个数字
+        var userNum = Number(prompt("请输入一个数字(0-40之间)"));
+        // 判断输入的数字是否合法
+        if (isNaN(userNum) || userNum < 0 || userNum > 40) {
+          alert("输入的数字不合法");
+          continue; //不合法的话跳过本次循环
+        }
+        count--;
+        //比较用户输入的数字与生成的随机数的大小
+        if (userNum > randomNum) {
+          alert("猜大了,还剩" + count + "次机会");
+        } else if (userNum < randomNum) {
+          alert("猜小了,还剩" + count + "次机会");
+        } else {
+          alert("恭喜,猜对了");
+          break; //猜对后退出循环
+        }
+        // 机会用完,退出循环并提示正确数字
+        if (count === 0) {
+          alert("机会用完了,正确数字是:" + randomNum);
+          break;
+        }
+      }
+    </script>
+  </body>
+</html>

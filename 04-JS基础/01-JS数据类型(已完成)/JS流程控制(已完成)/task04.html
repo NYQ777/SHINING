@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>判断水仙花数</title>
+  </head>
+  <body>
+    <script>
+      var num = prompt("请输入一个三位数");
+      // 获取百位数字
+      var num1 = num.charAt(0);
+      // 获取十位数字
+      var num2 = num.charAt(1);
+      // 获取个位数字
+      var num3 = num.charAt(2);
+      // 计算立方和
+      var result =
+        Math.pow(Number(num1), 3) +
+        Math.pow(Number(num2), 3) +
+        Math.pow(Number(num3), 3);
+      // 判断输出结果是否为水仙花数
+      if (result == num) {
+        alert("yes");
+      } else {
+        alert("no");
+      }
+    </script>
+  </body>
+</html>
