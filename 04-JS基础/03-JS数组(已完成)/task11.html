@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>水浒座次表</title>
+  </head>
+  <body>
+    <script>
+      // 三个数组，存储星宿、诨名和姓名
+      var star = [
+        "天魁星",
+        "天罡星",
+        "天机星",
+        "天闲星",
+        "天勇星",
+        "天雄星",
+        "天猛星",
+        "天威星",
+        "天英星",
+        "天贵星",
+      ];
+      var nickName = [
+        "及时雨",
+        "玉麒麟",
+        "智多星",
+        "入云龙",
+        "大刀",
+        "豹子头",
+        "霹雳火",
+        "双鞭",
+        "小李广",
+        "小旋风",
+      ];
+      var trueName = [
+        "宋江",
+        "卢俊义",
+        "吴用",
+        "公孙胜",
+        "关胜",
+        "林冲",
+        "秦明",
+        "呼延灼",
+        "花荣",
+        "柴进",
+      ];
+
+      // 循环遍历数组并输出座次表
+      for (var i = 0; i < star.length; i++) {
+        var seatNumber = (i + 1).toString().padStart(2, "0"); // 座次号格式化为两位数
+        var starName = star[i];
+        var nickname = nickName[i];
+        var truename = trueName[i];
+
+        // 输出座次表
+        console.log(
+          "忠义堂座次:" +
+            seatNumber +
+            "-" +
+            starName +
+            "-" +
+            nickname +
+            "-" +
+            truename
+        );
+      }
+    </script>
+  </body>
+</html>

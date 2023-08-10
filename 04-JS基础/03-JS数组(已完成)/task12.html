@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>冒泡排序</title>
+  </head>
+  <body>
+    <script>
+      function bubbleSort(arr) {
+        var len = arr.length;
+        for (var i = 0; i < len - 1; i++) {
+          for (var j = 0; j < len - 1 - i; j++) {
+            // 比较相邻的两个元素，如果前面的元素大于后面的元素，交换位置
+            if (arr[j] < arr[j + 1]) {
+              var temp = arr[j];
+              arr[j] = arr[j + 1];
+              arr[j + 1] = temp;
+            }
+          }
+        }
+      }
+
+      var arr = [4, 11, 6, 2, 12, 9, 3, 1, 10, 8, 5, 7];
+      bubbleSort(arr);
+      console.log(arr); 
+    </script>
+  </body>
+</html>

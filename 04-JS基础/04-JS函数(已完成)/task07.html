@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>输出斐波那契数列</title>
+  </head>
+  <body>
+    <script>
+      function getFibonacci(length) {
+        if (length <= 0) {
+          return []; // 当长度为 0 或负数的情况,返回空数组
+        } else if (length === 1) {
+          return [1]; // 返回长度为 1 的斐波那契数列，只包含 1
+        }
+        var fibonacci = [1, 1]; // 先定义斐波那契数列，前两项是 1、1
+        // 从下标为 2 的项开始，生成指定长度的斐波那契数列
+        for (var i = 2; i < length; i++) {
+          var nextValue = fibonacci[i - 1] + fibonacci[i - 2];
+          fibonacci.push(nextValue); // 将下一项添加到数列中
+        }
+        return fibonacci;
+      }
+      // 测试生成斐波那契数列的函数
+      var fibonacciSequence = getFibonacci(7);
+      console.log(fibonacciSequence.join("、")); // 将数组输出
+    </script>
+  </body>
+</html>

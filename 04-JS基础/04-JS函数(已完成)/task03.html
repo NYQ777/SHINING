@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>判断质数</title>
+  </head>
+  <body>
+    <script>
+      //让用户在弹窗里输入一个整数
+      var num = Number(prompt("请输入一个整数"));
+      //判断是否为质数
+      function isPrimeNumber(num) {
+        //排除1,小数及负数
+        if (num <= 1 || num % 1 !== 0) {
+          return false;
+        }
+        //遍历能把num整除的数
+        for (var i = 2; i <= num; i++) {
+          if (num % i === 0) {
+            if (num !== i && i !== 1) {
+              return false;
+            }
+          }
+        }
+        return true;
+      }
+
+      alert(isPrimeNumber(num));
+    </script>
+  </body>
+</html>

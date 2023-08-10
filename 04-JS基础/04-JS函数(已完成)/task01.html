@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>求平均数</title>
+  </head>
+  <body>
+    <script>
+      // 定义一个函数average
+      function average() {
+        var add = 0;
+        // 遍历所有参数
+        for (var i = 0; i < arguments.length; i++) {
+          add += arguments[i]; //求和
+        }
+        var result = add / arguments.length; //求平均数
+        console.log(result); //输出结果
+      }
+      average(20, 20, 20, 20, 20); //示例(20)
+      average(1, 2, 3, 4, 5, 6, 7, 8); //示例(4.5)
+      average(10, 20, 30); //示例(20)
+      average(111, 333, 555, 777, 999); //示例(555)
+    </script>
+  </body>
+</html>

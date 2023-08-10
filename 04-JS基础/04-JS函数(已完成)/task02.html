@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>寻找喇叭花数</title>
+  </head>
+  <body>
+    <script>
+      //计算阶乘的函数
+      function factorial(num) {
+        var result = 1;
+        for (var i = 1; i <= num; i++) {
+          result *= i;
+        }
+        return result;
+      }
+      //判断喇叭花数,如果是结果输出true,若果不是输出false
+      function isBellowflowerNumber(num) {
+        //拆解输入数字的个十百位各自对应的数字
+        var num1 = Number(String(num).charAt(0));
+        var num2 = Number(String(num).charAt(1));
+        var num3 = Number(String(num).charAt(2));
+        //判断这个数字是不是喇叭花数(num=num1+num2+num3)
+        if (num === factorial(num1) + factorial(num2) + factorial(num3)) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      //循环所有的三位数,如果是喇叭花数,则输出结果
+      for (var i = 100; i <= 999; i++) {
+        if (isBellowflowerNumber(i)) {
+          console.log(i);
+        }
+      }
+    </script>
+  </body>
+</html>

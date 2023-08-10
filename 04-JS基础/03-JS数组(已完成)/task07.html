@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>移除元素</title>
+  </head>
+  <body>
+    <script>
+      var arr = ["有效", "无效", "有效", "无效", "无效", "有效"];
+      var arrNew = [];
+      for (var i = 0; i < arr.length; i++) {
+        if (arr[i] == "无效") {
+          continue;
+        }
+        arrNew.push(arr[i]);
+      }
+      console.log(arrNew);
+    </script>
+  </body>
+</html>

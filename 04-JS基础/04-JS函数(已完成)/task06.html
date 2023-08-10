@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>计算工资</title>
+  </head>
+  <body>
+    <script>
+      function salary(year) {
+        var result = 10000;
+        for (var i = 1; i <= year; i++) {
+          result += result * (5 / 100);
+        }
+        return result;
+      }
+      console.log(salary(20));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>使用递归, 实现数组深克隆</title>
+  </head>
+  <body>
+    <script>
+      function deepCloneArray(arr) {
+        var clonedArray = []; // 创建一个空数组，用于存放克隆的数据
+        // 遍历原数组的每一项
+        for (var i = 0; i < arr.length; i++) {
+          var currentItem = arr[i];
+          // 使用递归，如果当前项是数组，则递归克隆它
+          if (Array.isArray(currentItem)) {
+            var clonedSubArray = deepCloneArray(currentItem);
+            clonedArray.push(clonedSubArray); // 将克隆的子数组添加到克隆数组中
+          } else {
+            clonedArray.push(currentItem); // 如果当前项不是数组，直接添加到克隆数组中
+          }
+        }
+        return clonedArray;
+      }
+      console.log(
+        deepCloneArray([33, 44, [55, 66], [77, 88, [99, 11], [22, 33]]])
+      );
+    </script>
+  </body>
+</html>

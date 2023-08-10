@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>求和</title>
+  </head>
+  <body>
+    <script>
+      var a = Number(prompt("输入第一个数字"));
+      var b = Number(prompt("输入第二个数字"));
+
+      function sum(a, b) {
+        var result = 0;
+        for (var i = a; i <= b; i++) {
+          result += i;
+        }
+        return result;
+      }
+      alert(sum(a, b));
+    </script>
+  </body>
+</html>
